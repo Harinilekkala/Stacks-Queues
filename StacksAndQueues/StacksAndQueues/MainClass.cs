@@ -5,7 +5,7 @@ namespace StacksAndQueues
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("--------------Welcome to concept of stackandqueue--------------");
+            Console.WriteLine("--------------Welcome to concept of stack(push and pop operation)--------------");
             LinkedListStack value = new LinkedListStack();
             value.push(70);
             value.push(30);
@@ -14,6 +14,14 @@ namespace StacksAndQueues
             value.Peek();
             value.Pop();
             value.IsEmpty();
+
+            Console.WriteLine("-----------------Welcome to concept of Queue(enque&dequeue)---------------");
+            StacksAndQueues.LinkedListQueue Queue = new StacksAndQueues.LinkedListQueue();
+            Queue.Enqueue(56);
+            Queue.Enqueue(30);
+            Queue.Enqueue(70);
+            Queue.DisPlay();
+
 
         }
     }
