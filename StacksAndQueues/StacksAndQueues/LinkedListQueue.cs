@@ -43,7 +43,24 @@ namespace StacksAndQueues
             }
             Console.WriteLine("{0} is in the top of the Queue", this.head.data);
         }
+        internal void Dequeue()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Queue is empty, Deletion is not possible");
+                return;
+            }
+            else
+            {
+                while (this.head != null)
+                {
+                    Console.WriteLine("value popped is {0}", this.head.data);
+                    this.head = this.head.next;
+                }
+
+            }
 
 
+        }
     }
 }
