@@ -11,7 +11,9 @@ namespace StacksAndQueues
             value.push(30);
             value.push(56);
             value.DisPlay();
-
+            value.Peek();
+            value.Pop();
+            value.IsEmpty();
 
         }
     }
